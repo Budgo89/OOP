@@ -22,6 +22,10 @@ namespace DZ2
             var bank3 = new BankAccount(5007.3, 1);
             bank3.PrintData();
 
+            Console.WriteLine(bank3.AccountNumber);
+            Console.WriteLine(bank3.Balance + 1000);
+            Console.WriteLine(bank3.BankAccounts);
+
 
             Console.ReadKey();
         }

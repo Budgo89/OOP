@@ -20,22 +20,50 @@ namespace DZ2
         public BankAccount (double _balance)
         {
             balance = _balance;
-            AccountNumber();
+            AccountNumbers();
         }
         public BankAccount (int _bankAccount)
         {
             bankAccount = (BankAccountType)_bankAccount;
-            AccountNumber();
+            AccountNumbers();
         }
         public BankAccount (double _balance, 
                             int _bankAccount)
         {
             balance = _balance;
             bankAccount = (BankAccountType)_bankAccount;
-            AccountNumber();
+            AccountNumbers();
         }
 
-        private void AccountNumber()
+        public long AccountNumber
+        {
+            get
+            {
+                return this.accountNumber;
+            }
+        }
+
+        public BankAccountType BankAccounts
+        {
+            get
+            {
+                return this.bankAccount;
+            }
+        }
+
+        public double Balance
+        {
+            get
+            {
+                return this.balance;
+            }
+            set
+            {
+                this.balance = value;
+            }
+        }
+
+        private void AccountNumbers()
         {
             accountNumber = NewAccountNumber();
         }
@@ -45,6 +73,7 @@ namespace DZ2
             Console.WriteLine($"Номер счёта: {accountNumber}");
             Console.WriteLine($"Ваш баланс: {balance} руб.");
             Console.WriteLine($"Тип карта: {bankAccount}");
+            Console.WriteLine();
         }
         private long NewAccountNumber()
         {
