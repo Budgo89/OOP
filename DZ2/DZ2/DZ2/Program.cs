@@ -25,7 +25,16 @@ namespace DZ2
             Console.WriteLine(bank3.AccountNumber);
             Console.WriteLine(bank3.Balance + 1000);
             Console.WriteLine(bank3.BankAccounts);
+            Console.WriteLine();
 
+            bank3.Withdraw(1500);
+            bank3.PrintData();
+
+            bank3.Withdraw(15000);
+            bank3.PrintData();
+
+            bank3.ToDeposit(10257.35);
+            bank3.PrintData();
 
             Console.ReadKey();
         }

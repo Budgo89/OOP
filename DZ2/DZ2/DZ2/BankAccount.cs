@@ -79,6 +79,22 @@ namespace DZ2
         {
             return number++;
         }
-
+        public void Withdraw(double sum)
+        {
+            if (sum > balance)
+            {
+                Console.WriteLine("На вашем счету недостаточно денег");
+            }
+            else
+            {
+                balance = balance - sum;
+                Console.WriteLine("Операция выполнена");
+            }
+        }
+        public void ToDeposit(double sum)
+        {
+            balance = balance + sum;
+            Console.WriteLine("Операция выполнена");
+        }
     }
 }
