@@ -13,19 +13,31 @@ namespace DZ2
         private BankAccountType bankAccount;
         private static long number = 1;
 
-        public void AccountNumber()
+        public BankAccount()
         {
-            accountNumber = NewAccountNumber();
-        }
 
-        public void Balance(double _balance)
+        }
+        public BankAccount (double _balance)
         {
             balance = _balance;
+            AccountNumber();
         }
-
-        public void BankAccountType(int _bankAccount)
+        public BankAccount (int _bankAccount)
         {
             bankAccount = (BankAccountType)_bankAccount;
+            AccountNumber();
+        }
+        public BankAccount (double _balance, 
+                            int _bankAccount)
+        {
+            balance = _balance;
+            bankAccount = (BankAccountType)_bankAccount;
+            AccountNumber();
+        }
+
+        private void AccountNumber()
+        {
+            accountNumber = NewAccountNumber();
         }
 
         public void PrintData()

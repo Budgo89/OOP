@@ -11,22 +11,16 @@ namespace DZ2
         static void Main(string[] args)
         {
             var bank = new BankAccount();
-            bank.AccountNumber();
-            bank.Balance(55240.30);
-            bank.BankAccountType(1);
             bank.PrintData();
-            var bank1 = new BankAccount();
-            bank1.AccountNumber();
-            bank1.Balance(55240.30);
-            bank1.BankAccountType(1);
+
+            var bank1 = new BankAccount(5007.3);
             bank1.PrintData();
-            var bank2 = new BankAccount();
-            bank2.AccountNumber();
-            bank2.Balance(55240.30);
-            bank2.BankAccountType(1);
+
+            var bank2 = new BankAccount(2);
             bank2.PrintData();
 
-
+            var bank3 = new BankAccount(5007.3, 1);
+            bank3.PrintData();
 
 
             Console.ReadKey();
