@@ -11,10 +11,11 @@ namespace DZ2
         private long accountNumber;
         private double balance;
         private BankAccountType bankAccount;
+        private static long number = 1;
 
-        public void AccountNumber(long _accountNumber)
+        public void AccountNumber()
         {
-            accountNumber = _accountNumber;
+            accountNumber = NewAccountNumber();
         }
 
         public void Balance(double _balance)
@@ -33,5 +34,10 @@ namespace DZ2
             Console.WriteLine($"Ваш баланс: {balance} руб.");
             Console.WriteLine($"Тип карта: {bankAccount}");
         }
+        private long NewAccountNumber()
+        {
+            return number++;
+        }
+
     }
 }
