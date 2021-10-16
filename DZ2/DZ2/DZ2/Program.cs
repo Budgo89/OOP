@@ -42,7 +42,12 @@ namespace DZ2
             Console.WriteLine(_srting2);
 
             #endregion
+            #region Tesk 3
+            string filename = "Lesson3Task2.txt";
+            var taskThree = new TaskThree();
+            taskThree.TaskThreeStart(filename);
 
+            #endregion
 
 
             Console.ReadKey();
