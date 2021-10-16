@@ -81,20 +81,32 @@ namespace DZ2
         }
         public void Withdraw(double sum)
         {
-            if (sum > balance)
-            {
-                Console.WriteLine("На вашем счету недостаточно денег");
-            }
-            else
+            if (sum < balance || bankAccount==0)
             {
                 balance = balance - sum;
                 Console.WriteLine("Операция выполнена");
+            }
+            else
+            {
+                Console.WriteLine("На вашем счету недостаточно денег");
             }
         }
         public void ToDeposit(double sum)
         {
             balance = balance + sum;
             Console.WriteLine("Операция выполнена");
+        }
+        public void MoneyTransfer(BankAccount bankAccount, double sum)
+        {
+            if (bankAccount.balance >= sum || bankAccount.bankAccount == 0)
+            {
+                bankAccount.Withdraw(sum);
+                ToDeposit(sum);
+            }
+            else
+            {
+                Console.WriteLine("На вашем счету недостаточно денег");
+            }
         }
     }
 }
