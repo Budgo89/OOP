@@ -10,7 +10,7 @@ namespace DZ2
     {
         static void Main(string[] args)
         {
-            
+            #region Task 1
             var bank1 = new BankAccount(200.3, 0);
             bank1.PrintData();
             var bank2 = new BankAccount(5007.3, 1);
@@ -32,6 +32,18 @@ namespace DZ2
             Console.WriteLine();
             bank1.PrintData();
             bank2.PrintData();
+            #endregion
+            #region Tesk 2
+            var taskTwo = new TaskTwo();
+
+            string _srting1 = "QWERTY";
+            Console.WriteLine(_srting1);
+            string _srting2 = taskTwo.Flipper(_srting1);
+            Console.WriteLine(_srting2);
+
+            #endregion
+
+
 
             Console.ReadKey();
         }
