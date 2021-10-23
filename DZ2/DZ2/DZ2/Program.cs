@@ -46,10 +46,14 @@ namespace DZ2
             string filename = "Lesson3Task2.txt";
             var taskThree = new TaskThree();
             taskThree.TaskThreeStart(filename);
-
+            Console.WriteLine();
             #endregion
 
+            #region
+            var tackFor1 = new TaskFour(10,80,2,27);
+            tackFor1.PrintBuilding();
 
+            #endregion
             Console.ReadKey();
         }
     }
