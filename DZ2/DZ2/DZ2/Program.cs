@@ -49,9 +49,15 @@ namespace DZ2
             Console.WriteLine();
             #endregion
 
-            #region
-            var tackFor1 = new TaskFour(10,80,2,27);
-            tackFor1.PrintBuilding();
+            #region Tesk 4
+
+            Creator.CreateBuild(10, 80, 2, 27);
+            Creator.CreateBuild(10, 120, 3, 28);
+            Creator.Print(1);
+            Console.WriteLine();
+            Creator.Print(2);
+            Creator.Delete(1);
+            Creator.Print(1);
 
             #endregion
             Console.ReadKey();

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace DZ2
 {
-    class TaskFour
+    public class TaskFour
     {
         private static int buildingNumber = 1;
+        private int numberBuilding;
         private double buildingHeight;
         private int numberOfFloors;
         private int numberOfApartments;
@@ -20,7 +21,7 @@ namespace DZ2
         #region constructors
         public TaskFour()
         {
-
+            buildingNumber++;
         }
         public TaskFour(int floors, int apartments, int entrances, double height)
         {
@@ -31,108 +32,110 @@ namespace DZ2
             heightOfOneFloor = HeightOfOneFloor();
             numberOfApartmentsInTheEntrance = NumberOfApartmentsInTheEntrance();
             numberOfApartmentsPerFloor = NumberOfApartmentsPerFloor();
+            numberBuilding = buildingNumber;
+            buildingNumber++;
         }
 
 
         #endregion
 
         #region filling
-        public void NumberOfFloors(int floors)
+        protected void NumberOfFloors(int floors)
         {
             numberOfFloors = floors;
         }
 
-        public void NumberOfApartments(int apertments)
+        protected void NumberOfApartments(int apertments)
         {
             numberOfApartments = apertments;
         }
 
-        public void NumberOfEntrances (int entrances)
+        protected void NumberOfEntrances (int entrances)
         {
             numberOfEntrances = entrances;
         }
 
-        public void BuildingHeight(double height)
+        protected void BuildingHeight(double height)
         {
             buildingHeight = height;
         }
         #endregion
 
         #region return
-        public int ReturnNumberOfFloors()
+        protected int ReturnNumberOfFloors()
         {
             return numberOfFloors;
         }
 
-        public int ReturnNumberOfEntrances()
+        protected int ReturnNumberOfEntrances()
         {
             return numberOfEntrances;
         }
 
-        public int ReturnNumberOfApartments()
+        protected int ReturnNumberOfApartments()
         {
             return numberOfApartments;
         }
 
-        public double ReturnBuildingHeight()
+        protected double ReturnBuildingHeight()
         {
             return buildingHeight;
         }
 
-        public int ReturnBuildingNumber()
+        protected int ReturnBuildingNumber()
         {
-            return buildingNumber;
+            return numberBuilding;
         }
-        public double ReturnheightOfOneFloor()
+        protected double ReturnheightOfOneFloor()
         {
             return heightOfOneFloor;
         }
-        public int ReturnNumberOfApartmentsInTheEntrance()
+        protected int ReturnNumberOfApartmentsInTheEntrance()
         {
             return numberOfApartmentsInTheEntrance;
         }
-        public int ReturnNumberOfApartmentsPerFloor()
+        protected int ReturnNumberOfApartmentsPerFloor()
         {
             return numberOfApartmentsPerFloor;
         }
         #endregion
 
         #region print
-        public void PrintNumberOfFloors()
+        protected void PrintNumberOfFloors()
         {
             Console.WriteLine($"Количество этажей: {numberOfFloors}");
         }
 
-        public void PrintNumberOfEntrances()
+        protected void PrintNumberOfEntrances()
         {
             Console.WriteLine($"Количесто подъездов: {numberOfEntrances} ");
         }
 
-        public void PrintNumberOfApartments()
+        protected void PrintNumberOfApartments()
         {
             Console.WriteLine($"Количество квартир: {numberOfApartments}");
         }
 
-        public void PrintBuildingHeight()
+        protected void PrintBuildingHeight()
         {
             Console.WriteLine($"Высота здания: {buildingHeight}");
         }
 
-        public void PrintBuildingNumber()
+        protected void PrintBuildingNumber()
         {
-            Console.WriteLine($"Номер здания: {buildingNumber}");
+            Console.WriteLine($"Номер здания: {numberBuilding}");
         }
 
-        public void PrintHeightOfOneFloor() 
+        protected void PrintHeightOfOneFloor() 
         {
             Console.WriteLine($"Bысоты этажа: {heightOfOneFloor}");
         }
-        public void PrintNumberOfApartmentsInTheEntrance()
+        protected void PrintNumberOfApartmentsInTheEntrance()
         {
             Console.WriteLine($"Количество квартир в подъезде {numberOfApartmentsInTheEntrance}");
         }
 
-        public void PrintNumberOfApartmentsPerFloor()
+        protected void PrintNumberOfApartmentsPerFloor()
         {
             Console.WriteLine($"Количество квартир на этаже: {numberOfApartmentsPerFloor}");
         }
