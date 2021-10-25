@@ -57,7 +57,7 @@ namespace DZ2
             Console.WriteLine();
             Creator.Print(2);
             Creator.Delete(1);
-            Creator.Print(1);
+            Creator.Print(2);
 
             #endregion
             Console.ReadKey();

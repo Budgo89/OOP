@@ -33,7 +33,7 @@ namespace DZ2
         public static void Print(int i)
         {
             var building = hashTable.Search(Convert.ToString(i));
-            building.PrintBuilding();
+                building.PrintBuilding();
         }
 
         public static void Delete(int i)
