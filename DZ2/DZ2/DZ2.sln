@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ2", "DZ2\DZ2.csproj", "{1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryBuilding", "LibraryBuilding\LibraryBuilding.csproj", "{317D0358-B784-4220-8F18-5919DDCC99F0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZ5_rational_and_complex_number_calculator", "DZ5_rational_and_complex_number_calculator\DZ5_rational_and_complex_number_calculator.csproj", "{FA459F7B-98AE-466D-AD3F-C3E1BBB6C410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RationalTest", "RationalTest\RationalTest.csproj", "{1A68CE18-740C-4EC7-8908-A9903B9910A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{317D0358-B784-4220-8F18-5919DDCC99F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{317D0358-B784-4220-8F18-5919DDCC99F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{317D0358-B784-4220-8F18-5919DDCC99F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA459F7B-98AE-466D-AD3F-C3E1BBB6C410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA459F7B-98AE-466D-AD3F-C3E1BBB6C410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA459F7B-98AE-466D-AD3F-C3E1BBB6C410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA459F7B-98AE-466D-AD3F-C3E1BBB6C410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A68CE18-740C-4EC7-8908-A9903B9910A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A68CE18-740C-4EC7-8908-A9903B9910A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A68CE18-740C-4EC7-8908-A9903B9910A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A68CE18-740C-4EC7-8908-A9903B9910A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
