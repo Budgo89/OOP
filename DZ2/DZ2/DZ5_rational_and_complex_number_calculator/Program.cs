@@ -29,6 +29,19 @@ namespace DZ5_rational_and_complex_number_calculator
             Console.WriteLine(a <= b);
             Console.WriteLine((float)a);
             Console.WriteLine((int)a);
+            Console.WriteLine();
+
+            Complex x = new Complex(1, 5);
+            Complex y = new Complex(3,2);
+
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(x+y);
+            Console.WriteLine(x-y);
+            Console.WriteLine(x*y);
+            Console.WriteLine(x/y);
+            Console.WriteLine(x==y);
+            Console.WriteLine(x!=y);
         }
     }
 }
