@@ -200,7 +200,7 @@ namespace DZ5_rational_and_complex_number_calculator
                 if (nr - dm == dm) return $"{nr / dm}";
                 else return $"{nr / dm}+{nr - dm}/{dm}";
             }
-            else if(nr < 0) return $"{nr / dm}{nr - dm}/{dm}";
+            else if(nr < 0 && Math.Abs(nr) > dm) return $"{nr / dm}{nr - dm}/{dm}";
             return $"{nr}/{dm}";
         }
 
