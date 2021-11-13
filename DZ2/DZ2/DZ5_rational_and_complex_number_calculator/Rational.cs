@@ -204,9 +204,14 @@ namespace DZ5_rational_and_complex_number_calculator
             return $"{nr}/{dm}";
         }
 
-        public bool Equals(Rational x)
+        public override bool Equals(object obj)
         {
-            return (x.nr == Nr && x.dm == Dm);
+            Rational y = (Rational)obj;
+            return (this.nr == y.nr && this.dm == y.dm);
+        }
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(nr, dm);
         }
     }
 }

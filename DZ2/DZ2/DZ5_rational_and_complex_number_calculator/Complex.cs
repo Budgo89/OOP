@@ -100,7 +100,15 @@ namespace DZ5_rational_and_complex_number_calculator
         {
             return (x.re != y.re || x.im != y.im);
         }
-
+        public override bool Equals(object obj)
+        {
+            Complex y = (Complex)obj;
+            return (this.re == y.re && this.im == y.im);
+        }
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(im, re);
+        }
         public override string ToString()
         {
             if (im > 0)
