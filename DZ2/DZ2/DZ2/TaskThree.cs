@@ -17,6 +17,7 @@ namespace DZ2
                 Console.WriteLine(item);
             }
             Console.WriteLine();
+
             for (int i = 0; i < fileLines.Length; i++)
             {
                 SearchMail(ref fileLines[i]);
