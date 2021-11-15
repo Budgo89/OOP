@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RationalTest", "RationalTes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComplexTest", "ComplexTest\ComplexTest.csproj", "{64C00899-743B-4001-9962-CB9EE69B54DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ6_2", "DZ6_2\DZ6_2.csproj", "{5AB56CF5-DE42-4417-BAF2-7024A2710803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DZ6_2", "DZ6_2\DZ6_2.csproj", "{5AB56CF5-DE42-4417-BAF2-7024A2710803}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DZ6_3", "DZ6_3\DZ6_3.csproj", "{450279B4-EAF4-4421-BA21-8264204B0CC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{5AB56CF5-DE42-4417-BAF2-7024A2710803}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AB56CF5-DE42-4417-BAF2-7024A2710803}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AB56CF5-DE42-4417-BAF2-7024A2710803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450279B4-EAF4-4421-BA21-8264204B0CC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450279B4-EAF4-4421-BA21-8264204B0CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450279B4-EAF4-4421-BA21-8264204B0CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450279B4-EAF4-4421-BA21-8264204B0CC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
