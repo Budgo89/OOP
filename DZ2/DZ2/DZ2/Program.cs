@@ -66,26 +66,43 @@ namespace DZ2
 
             #region DZ 5.1
 
-            var bank1 = new BankAccount(200.3, 0);
-            var bank2 = new BankAccount(200.3, 0);
-            var bank3 = new BankAccount(200.3, 1);
-            var bank4 = new BankAccount(100, 0);
-            Console.WriteLine(bank1);
-            Console.WriteLine(bank2);
-            Console.WriteLine(bank3);
-            Console.WriteLine(bank4);
-            Console.WriteLine(bank1==bank1);
-            Console.WriteLine(bank1 != bank1);
-            Console.WriteLine(bank1 == bank2);
-            Console.WriteLine(bank1 != bank2);
-            Console.WriteLine(bank1.Equals(bank2));
-            Console.WriteLine(bank1==bank3);
-            Console.WriteLine(bank1 != bank3);
-            Console.WriteLine(bank1.Equals(bank3));
-            Console.WriteLine(bank1==bank4);
-            Console.WriteLine(bank1 != bank4);
-            Console.WriteLine(bank1.Equals(bank4));
+            //var bank1 = new BankAccount(200.3, 0);
+            //var bank2 = new BankAccount(200.3, 0);
+            //var bank3 = new BankAccount(200.3, 1);
+            //var bank4 = new BankAccount(100, 0);
+            //Console.WriteLine(bank1);
+            //Console.WriteLine(bank2);
+            //Console.WriteLine(bank3);
+            //Console.WriteLine(bank4);
+            //Console.WriteLine(bank1==bank1);
+            //Console.WriteLine(bank1 != bank1);
+            //Console.WriteLine(bank1 == bank2);
+            //Console.WriteLine(bank1 != bank2);
+            //Console.WriteLine(bank1.Equals(bank2));
+            //Console.WriteLine(bank1==bank3);
+            //Console.WriteLine(bank1 != bank3);
+            //Console.WriteLine(bank1.Equals(bank3));
+            //Console.WriteLine(bank1==bank4);
+            //Console.WriteLine(bank1 != bank4);
+            //Console.WriteLine(bank1.Equals(bank4));
             #endregion
+
+            #region DZ 7.1
+
+            ACoder coder = new ACoder();
+            string a = "аАбБвВюЮяЯ aAzZ";
+            Console.WriteLine(a);
+            Console.WriteLine(coder.Encode(a));
+            Console.WriteLine(coder.Decode(coder.Encode(a)));
+            BCoder bCoder = new BCoder();
+            Console.WriteLine();
+            string b = "аАбБюЮяЯ aAbByYzZ";
+            Console.WriteLine(b);
+            Console.WriteLine(bCoder.Encode(b));
+            Console.WriteLine(bCoder.Decode(b));
+
+            #endregion
+
 
             Console.ReadKey();
         }
