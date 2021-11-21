@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DZ6_3
 {
-    internal class Circle : Point
+    internal class Circle : Point, IArea
     {
         internal Point сentre;
         internal double radius;
@@ -16,14 +16,16 @@ namespace DZ6_3
             this.сentre = new Point(x, y);
             this.radius = radius;
         }
+
+        public double Area()
+        {
+            return Math.PI * Math.Pow(radius, 2);
+        }
+
         public override string ToString()
         {
             return $"Круг \nЦвет {colour}. \nВидимость {visibility} \nКоординаты по X и Y: {сentre} \nРадиус {radius}";
         }
 
-        internal double AreaOfACircle()
-        {
-            return Math.PI * Math.Pow(radius,2);
-        }
     }
 }

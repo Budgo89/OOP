@@ -23,5 +23,15 @@ namespace DZ6_3
         {
             return $"{x} {y}";
         }
+
+        internal override void HorizontalMovement(int x)
+        {
+            this.x = this.x + x;
+        }
+
+        internal override void VerticalMovement(int y)
+        {
+            this.y = this.y + y;
+        }
     }
 }
