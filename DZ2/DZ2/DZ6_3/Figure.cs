@@ -6,19 +6,13 @@ using System.Threading.Tasks;
 
 namespace DZ6_3
 {
-    internal class Figure
+    abstract internal class Figure
     {
         internal string colour;
         internal bool visibility;
 
-        internal void HorizontalMovement()
-        {
-            throw new NotImplementedException();
-        }
-        internal void VerticalMovement()
-        {
-            throw new NotImplementedException();
-        }
+        abstract internal void HorizontalMovement(int x);
+        abstract internal void VerticalMovement(int y);
         internal void ChangeColor(string colour)
         {
             this.colour = colour;
